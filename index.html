@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="naver-site-verification" content="269240594bc249fda7facbe797e1757ef36c2023" />
+    <meta name="google-site-verification" content="4lKPs29jGm0y2xHR_964RXfSFuOlAtyvcF6YT-kotl8" />
+    <meta property="og:url" content="https://fit2us.com/">
+    <meta property="og:title" content="주식회사 핏투어스">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/fittous.png">
+    <meta property="og:description" content="노인성 질환에 대한 데이터 기반 맞춤형 헬스케어, 핏투어스">
+    <meta name="description" content="노인성 질환에 대한 데이터 기반 맞춤형 헬스케어, 핏투어스입니다.">
+    <title>핏투어스</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <link rel="stylesheet" href="../css/main.css"></link>
+    <link rel="stylesheet" href="../css/folded.css"></link>
+    <link rel="stylesheet" href="../css/tablet.css"></link>
+    <link rel="stylesheet" href="../css/mobile.css"></link>
+    <link rel="shortcut icon" href='./images/fittous.png'/>
+    <link rel="icon" href='./images/favicon.png'/>
+    <link rel="apple-touch-icon" href='./images/favicon.png'/>
+    <link rel="apple-touch-icon-precomposed" href='./images/favicon.png'/>
+    <script src="../js/main.js" defer></script>
+    <!-- update the version number as needed -->
+  
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.3.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
+  </head>
+  <body>
+    <div class='cursor'>
+      <img src='../images/cursor.png' alt='cursor'>
+    </div>
+    <header class="header-fixed">
+      <div class="header-limiter">
+        <img class='logo' src='../images/logo.png'>
+        <ul class='tab-menu'>
+          <li class='tab-item'><a class='tab-font' href="about.html">About</a></li>
+          <li class='tab-item' id='to-solutions'>Solutions</li>
+          <li class='tab-item'><a class='tab-font' href="news.html">News & Media</a></li>
+          <li class='tab-item' id='to-publication'>Publication</li>
+          <li class='tab-item' id='to-partners'>Partners</li>
+        </ul>
+        <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+        <div class="overlay" id="overlay">
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li id='to-solutions2'>Solutions</li>
+              <li><a href="news.html">News & Media</a></li>
+              <li id='to-publication2'>Publication</li>
+              <li id='to-partners2'>Partners</li>
+            </ul>
+          </nav>
+        </div>
+      </div> 
+    </header>
+  
+   
+    <div class="main">
+      <!-- <video muted autoplay loop playsinline disablepictureinpicture poster="/images/blur1.png" class='main-video'>
+        <source src="../images/video.mp4" type="video/mp4">
+        <strong>Your browser does not support the video tag.</strong>
+      </video> -->
+      <video poster="/images/thumnail.png" autoplay muted loop>
+        <source src="/images/test.mp4" type="video/mp4">
+    </video>
+      <h1 class='main-text text1'>기록</h1>
+      <h1 class='main-text text2'>실천</h1>
+      <h1 class='main-text text3'>맞춤</h1>
+    </div>
+    <div class='about'>
+      <h1 class='about-text'>About Us</h1>
+        <img class='ven' src="../images/ven.png">
+        <img class='blur1' src="../images/blur2.png">
+        <img class='blur2' src="../images/blur1.png"/>
+        <div class='button' id='about-button'>
+          <h1 class='more'>+ More</h1>
+      
+        </div>
+        <div class='desc-box desc-box1'>
+          <h1 class='desc-text desc-normal'>노인성 질환에 대한</h1>
+          <h1 class='desc-text desc-bold'>데이터 기반 개인 맞춤형</h1>
+          <h1 class='desc-text desc-normal'>헬스케어 솔루션</h1>
+        </div>
+        <div class='desc-box desc-box2'>
+          <h1 class='desc-text desc-bold'>기록과 실천을 통해</h1>
+          <h1 class='desc-text desc-normal'>만들어나가는</h1>
+          <h1 class='desc-text desc-normal'>건강하고 행복한 삶</h1>
+        </div>
+  </div>
+  <div class='dementia'>
+    <h1 class='solution-text'>Solution</h1>
+    <h1 class='dementia-desc'>노인성 치매 및 우울증 환자를 위한</h1>
+    <h1 class='dementia-name'>디지털 헬스케어 어플리케이션, 한가족</h1>
+    <img class='blur1' src="../images/blur1.png">
+    <div class='dementia-image'>
+      <img class='dementia-images' src="../images/dementia.png">
+      <img class='dementia-images' src="../images/depression.png">
+    </div>
+    <div class='familyone-button'  id='familyone-button'>
+      <h1 class='familyone-more'>+ More</h1>
+    </div>
+  </div>
+
+  <div class='dementia-slide'>
+        <img class='dementia-slide-image' src= "../images/dementia_slide.png"/>
+  </div>
+  <div class='sdm'>
+    <h1 class='solution-text'>Solution</h1>
+   <h1 class='sdm-name'>SDM 기반 데이터 헬스케어</h1>
+    <img class='blur2' src="../images/blur2.png">
+    <div class='sdm-image'>
+      <img class='sdm-images' src="../images/sdm1.png">
+      <img class='sdm-images' src="../images/sdm2.png">
+      <img class='sdm-images' src="../images/sdm3.png">
+    </div>
+   
+  </div>
+  <div class='sdm-slide'>
+      <img class='sdm-slide-image' src= "../images/sdm-slide.png"/>
+  </div>
+  <div class='newsMedia'>
+    <h1 class='newsMedia-text'>News<br/>&<br/>Media</h1>
+    <img class='shine' src="../images/shine.png">
+    <div class='newsMedia-grid'>
+      <div class='newsMedia-card' id='main-news1'>
+        <img class='news-image' src= "../images/news/news1.png"/>
+        <h1 class='news-title'>벤더빌트 바이오메디컬 데이터센터, 부산 온다</h1>
+        <h1 class='news-date'>2023.06.02.</h1>
+        <h1 class='news-desc'>치매 등 뇌질환 디지털치료제 개발 핵심시설... 내년 초 부산진해경제자유구역에</h1>
+      </div>
+      <div class='newsMedia-card' id='main-news2'>
+        <img class='news-image' src= "../images/news/news2.png"/>
+        <h1 class='news-title'>동아대, 美 밴더빌트대 바이오메디컬 이미지데이터 분석센터와 업무협약</h1>
+        <h1 class='news-date'>2023.05.31.</h1>
+        <h1 class='news-desc'>동아대학교는 미국 밴더빌트대학 메디컬센터 바이오메디컬 이미지데이터 분석센터와 업무협약을 체결했다고 31일 밝혔다.</h1>
+      </div>
+    </div>
+    <div class='button'  id='news-button'>
+      <h1 class='more'>+ More</h1>
+    </div>
+  </div>
+  <div class='publication'>
+    <h1 class='publication-text'>Publication</h1>
+    <img class='shine2' src="../images/shine.png">
+    <div class='publication-box'>
+      <div class='publication-card' id='publication8'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2022</h1>
+          <h1 class='publication-title'>Evaluating a shared decision-making intervention regarding dialysis modality: development and validation of self-assessment items for patients with chronic kidney disease</h1>
+          <h1 class='publication-author'>Soojin Kim, Jung Tak Park, Sung Joon Shin, Jae Hyun Chang, Kyung Don Yoo, Jung Pyo Lee, Dong-Ryeol Ryu, Soontae An, and Sejoong Kim</h1>
+        </div>
+      </div>
+  
+      <div class='publication-card' id='publication7'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2021</h1>
+          <h1 class='publication-title'>Awareness of doctors' shared decision-making in life-sustaining care decisions</h1>
+          <h1 class='publication-author'>D Kim, HJ Lee, SY Yu, JH Kwon, HK Ahn, JH Kim, S Seo, CH Maeng, S Lim, SJ Shin</h1>
+        </div>
+      </div>
+  
+      <div class='publication-card' id='publication6'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2020</h1>
+          <h1 class='publication-title'>Network localization of clinical, cognitive, and neuropsychiatric symptoms in Alzheimer’s disease</h1>
+          <h1 class='publication-author'>Aaron M Tetreault, Tony Phan, Dana Orlando, Ilwoo Lyu, Hakmook Kang, Bennett Landman, R Ryan Darby, Alzheimer’s Disease Neuroimaging Initiative</h1>
+        </div>
+      </div>
+  
+      <div class='publication-card' id='publication5'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2019</h1>
+          <h1 class='publication-title'>Brain network functional connectivity and cognitive performance in major depressive disorder</h1>
+          <h1 class='publication-author'>Kimberly M Albert, Guy G Potter, Brian D Boyd, Hakmook Kang, Warren D Taylor</h1>
+        </div>
+      </div>
+  
+      <div class='publication-card' id='publication4'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2019</h1>
+          <h1 class='publication-title'>Intrinsic functional network connectivity is associated with clinical symptoms and cognition in late-life depression</h1>
+          <h1 class='publication-author'>Jason A Gandelman, Kimberly Albert, Brian D Boyd, Jung Woo Park, Meghan Riddle, Neil D Woodward, Hakmook Kang, Bennett A Landman, Warren D Taylor</h1>
+        </div>
+      </div>
+  
+      <div class='publication-card' id='publication3'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2019</h1>
+          <h1 class='publication-title'>The relationship between domain-specific subjective cognitive decline and Alzheimer's pathology in normal elderly adults</h1>
+          <h1 class='publication-author'>Sepideh Shokouhi, Alexander C Conley, Suzanne L Baker, Kimberly Albert, Hakmook Kang, Harry E Gwirtsman, Paul A Newhouse, Alzheimer's Disease Neuroimaging Initiative</h1>
+        </div>
+      </div>
+  
+      <div class='publication-card' id='publication2'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2018</h1>
+          <h1 class='publication-title'>Ventral striatal network connectivity reflects reward learning and behavior in patients with Parkinson's disease</h1>
+          <h1 class='publication-author'>Kalen Petersen, Nelleke Van Wouwe, Adam Stark, Ya‐Chen Lin, Hakmook Kang, Paula Trujillo‐Diaz, Robert Kessler, David Zald, Manus J Donahue, Daniel O Claassen</h1>
+        </div>
+      </div>
+  
+      <div class='publication-card' id='publication1'>
+        <img class='publication-icon' src='../images/publications/publication-icon.png'/>
+        <div class='publication-textBox'>
+          <h1 class='publication-date'>2017</h1>
+          <h1 class='publication-title'>임종돌봄에 대한 교육의 필요성 : 2개 대학병원의 인턴을 대상으로 예비 분석</h1>
+          <h1 class='publication-author'>김도연, 김경지, 신성준, 권복규, 남은미, 허대석, 이순남
+            </h1>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div>
+  <div class='partners'>
+    <h1 class='partners-text'>Partners</h1>
+    <img class='shine3' src="../images/shine.png">
+  
+    <div class='partners-box'>
+      <div class='partners-item'>
+        <img class='partners-item-image' src='../images/logos/seoul.png'/>
+        <h1 class = 'partners-item-title'>서울대학교<br/>행복연구센터</h1>
+      </div>
+      <div class='partners-item'>
+        <img class='partners-item-image' src='../images/logos/dongguk.png'/>
+        <h1 class = 'partners-item-title'>동국대병원<br/>디지털치료제연구소</h1>
+      </div>
+      <div class='partners-item'>
+        <img class='partners-item-image' src='../images/logos/vanderbilt.png'/>
+        <h1 class = 'partners-item-title'>밴더빌트대학교<br/>이미지데이터연구소</h1>
+      </div>
+      <div class='partners-item'>
+        <img class='partners-item-image' src='../images/logos/dongguk.png'/>
+        <h1 class = 'partners-item-title'>동국대병원<br/>개방형실험실</h1>
+      </div>
+      <div class='partners-item'>
+        <img class='partners-item-image' src='../images/logos/somang.png' style='border-radius: 10px;'/>
+        <h1 class = 'partners-item-title'>SOMANG<br/>SOCIETY</h1>
+      </div>
+      <div class='partners-item'>
+        <img class='partners-item-image' src='../images/logos/bsquare.webp'/>
+        <h1 class = 'partners-item-title'>주식회사<br/>비스퀘어랩</h1>
+      </div>
+    </div>
+    <img class='partners-banner' src="../images/partnerBanner.png"/>
+  </div>
+  <footer class='footer'>
+    <div class='footer-box'>
+      <div class='footer-line'>
+        <h1 class='footer-bold'>회사명</h1>
+        <h1 class='footer-light'>주식회사 핏투어스</h1>
+        <h1 class='footer-bold'>대표이사</h1>
+        <h1 class='footer-light'>채승원</h1>
+        <h1 class='footer-bold'>사업자등록번호</h1>
+        <h1 class='footer-light'>436-81-02604</h1>
+      </div>
+      <div class='footer-line'>
+  
+      </div>
+      <div class='footer-line'>
+        <h1 class='footer-bold'>본사</h1>
+        <h1 class='footer-light'>부산광역시 명지오션시티11로 74 502호</h1>
+        <h1 class='footer-bold'>연구소</h1>
+        <h1 class='footer-light'>서울특별시 공항대로 209 716호</h1>
+      </div>
+      <div class='footer-line'>
+        <h1 class='footer-bold'>TEL</h1>
+        <h1 class='footer-light'>02-6953-5116</h1>
+        <h1 class='footer-bold'>FAX</h1>
+        <h1 class='footer-light'>02-6953-5118</h1>
+        <h1 class='footer-bold'>E-mail</h1>
+        <h1 class='footer-light'>fittous01@gmail.com</h1>
+      </div>
+
+      <div class='footer-line'>
+        <h1 class='footer-light'>© FitToUs Inc. All Rights Reserved</h1>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadEl = document.querySelector('#load');
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      // firebase.analytics(); // call to activate
+      // firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth', 
+          'database', 
+          'firestore',
+          'functions',
+          'messaging', 
+          'storage', 
+          'analytics', 
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+  </body>
+</html>
